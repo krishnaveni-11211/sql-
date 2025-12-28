@@ -1,0 +1,52 @@
+MYSQL:
+It's the Structured Query Language for dealing with relational databases. SQL is used to insert, search, update, and delete database records.
+SELECT: The SELECT statement is used to select data from a database.
+SELECT * FROM  customer;------>table_name       
+SELECT column1, column2, ... FROM table_name;
+The SELECT DISTINCT statement:
+It is used to return only distinct (different) values. Inside a table, a column often contains many duplicate values, and sometimes you only want to list the different (distinct) values.
+SELECT DISTINCT column1, column2, ...FROM table_name;
+select  count( distinct customer_id )from orders ;
+WHERE:
+The WHERE clause is used to filter records. It is used to extract only those records that fulfill a specified condition.
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition;
+Note: The WHERE clause is not only used in SELECT statements, it is also used in UPDATE, DELETE, etc.!
+select *from  orders where customer_id=4;
+  
+And (or)OR (or) NOT operations:
+The AND operator displays a record if all the conditions separated by AND are TRUE.
+SELECT column1, column2, ...FROM table_name
+WHERE condition1 AND condition2 AND condition3 ...;
+  example:select *from  customers where age=22 and country='UK';
+  
+The OR operator displays a record if any of the conditions separated by OR is TRUE.
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition1 OR condition2 OR condition3 ...;
+
+The NOT operator displays a record if the condition(s) is NOT TRUE.
+SELECT column1, column2, ...FROM table_name
+WHERE NOT condition;
+  example: select *from  customers where not country='UK';(uk unde coulmn kakunda remaining motham vastai)
+The MySQL ORDER BY Keyword:assending order and decending order
+The ORDER BY keyword is used to sort the result-set in ascending or descending order.
+The ORDER BY keyword sorts the records in ascending order by default. To sort the records in descending order, use the DESC keyword.
+SELECT column1, column2, ...
+FROM table_name
+ORDER BY column1, column2, ... ASC|DESC;
+ INSERT INTO:The INSERT INTO statement is used to insert new records in a table.
+IS NULL Syntax:
+SELECT column_names
+FROM table_name
+WHERE column_name IS NULL;
+IS NOT NULL Syntax:
+SELECT column_names
+FROM table_name
+WHERE column_name IS NOT NULL;
+
+
+
+
+
