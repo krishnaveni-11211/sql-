@@ -12,7 +12,7 @@ The WHERE clause is used to filter records. It is used to extract only those rec
 SELECT column1, column2, ...
 FROM table_name
 WHERE condition;
-Note: The WHERE clause is not only used in SELECT statements, it is also used in UPDATE, DELETE, etc.!
+Note: The WHERE clause is not only used in SELECT statements, but it is also used in UPDATE, DELETE, etc.!
 select *from  orders where customer_id=4;
   
 And (or)OR (or) NOT operations:
